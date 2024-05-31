@@ -1,0 +1,40 @@
+@use '../variables';
+
+.sondevela-section-icons{
+  padding-top: 125px;
+  padding-bottom: 135px;
+  .container{
+    max-width: variables.$max-width;
+    margin: 0 auto;
+    text-align: center;
+    .content {
+      max-width: 989px;
+      margin: 0 auto;
+      .title {
+        font-size: 32px;
+        font-family: 'Playfair Display', sans-serif;
+        letter-spacing: 11px;
+        font-weight: 600;
+        color: variables.$gold-color;
+      }
+
+      .title2 {
+        font-size: 36px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 200;
+        max-width: 909px;
+        margin: 0 auto;
+      }
+
+      .description {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 200;
+      }
+
+      .enlace {
+
+      }
+    }
+  }
+}

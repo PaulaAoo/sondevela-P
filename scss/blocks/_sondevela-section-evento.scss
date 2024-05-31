@@ -1,0 +1,100 @@
+@use '../variables';
+
+.sondevela-section-evento{
+  .container{
+    max-width: variables.$max-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    .content {
+      margin: 0 auto;
+      padding: 190px 50px 125px 50px;
+      h2.title {
+        font-size: 36px;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: 800;
+        line-height: 35px;
+        color: variables.$gold-color;
+        position: relative;
+        text-align: left;
+        &:before{
+          content: '';
+          height: 1px;
+          width: 50px;
+          background-color: #000;
+          position: absolute;
+          top: -43px;
+        }
+      }
+      .desde{
+        display: block;
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif;
+      }
+      .subtitle{
+        font-size: 16px;
+        padding-bottom: 10px;
+        color: variables.$gold-color;
+        font-family: Montserrat, sans-serif;
+        display: block;
+      }
+      .subtitle2{
+        font-size: 10px;
+        font-family: Montserrat, sans-serif;
+        display: block;
+        color: #000;
+      }
+      .description {
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        font-weight: 200;
+        text-align: left;
+      }
+
+      .link{
+        a {
+          min-width: 218px;
+        }
+      }
+    }
+    .images{
+      .image{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &.left{
+    .container{
+      grid-template-columns: 3fr 6fr;
+      .content{
+      }
+    }
+  }
+
+  &.right{
+    .container{
+      grid-template-columns: 3fr 1fr;
+      .content{
+        order: 1;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container{
+      display: block;
+      .content{
+        padding: 40px 30px;
+      }
+      .images{
+        height: 300px;
+      }
+    }
+  }
+}

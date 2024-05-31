@@ -1,0 +1,406 @@
+.sondevela-section-text {
+  padding-top: 125px;
+  padding-bottom: 135px;
+}
+.sondevela-section-text .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sondevela-section-text .container .content {
+  max-width: 989px;
+  margin: 0 auto;
+}
+.sondevela-section-text .container .content .title {
+  font-size: 32px;
+  font-family: "Playfair Display", sans-serif;
+  letter-spacing: 11px;
+  font-weight: 600;
+  color: #A1865E;
+}
+.sondevela-section-text .container .content .title2 {
+  font-size: 36px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 200;
+  max-width: 909px;
+  margin: 0 auto;
+}
+.sondevela-section-text .container .content .description {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+.sondevela-section-text2 {
+  padding-top: 125px;
+  padding-bottom: 135px;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sondevela-section-text2 .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sondevela-section-text2 .container .content {
+  max-width: 989px;
+  margin: 0 auto;
+  color: #fff;
+}
+.sondevela-section-text2 .container .content .title {
+  font-size: 55px;
+  font-family: Montserrat, sans-serif;
+  line-height: 55px;
+  font-weight: 900;
+}
+.sondevela-section-text2 .container .content .description {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.sondevela-section-text3 {
+  min-height: 500px;
+  background-color: #0F1022;
+}
+.sondevela-section-text3 .container {
+  min-height: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sondevela-section-text3 .container .content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 7fr 6fr;
+  min-height: 500px;
+  align-items: center;
+}
+.sondevela-section-text3 .container .content .title {
+  font-size: 40px;
+  font-family: Playfair Display, sans-serif;
+  line-height: 50px;
+  font-weight: 800;
+  color: #A1865E;
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
+  position: relative;
+}
+.sondevela-section-text3 .container .content .description {
+  font-family: Montserrat, sans-serif;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 200;
+  max-width: 464px;
+  text-align: left;
+  color: #fff;
+}
+.sondevela-section-text3 .container .content .link {
+  text-align: left;
+}
+.sondevela-section-text3 .container .content .link a {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.sondevela-section-text4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.sondevela-section-text4 .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 130px 150px;
+}
+.sondevela-section-text4 .container .content {
+  max-width: 561px;
+  background: #0F1022;
+  padding: 50px 70px;
+}
+.sondevela-section-text4 .container .content .title {
+  font-size: 32px;
+  font-family: "Playfair Display", sans-serif;
+  line-height: 35px;
+  font-weight: 800;
+  color: #A1865E;
+}
+.sondevela-section-text4 .container .content .description {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 200;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.sondevela-section-productos {
+  background-color: #F7F6F2;
+  padding-top: 125px;
+  padding-bottom: 135px;
+}
+.sondevela-section-productos .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.sondevela-section-productos .container .content {
+  margin: 0 auto;
+}
+.sondevela-section-productos .container .content .subtitle {
+  display: block;
+  font-size: 18px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 92px;
+  position: relative;
+}
+.sondevela-section-productos .container .content .subtitle:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 72px;
+  background-color: #000;
+  display: inline-block;
+  top: 12px;
+  left: 0;
+}
+.sondevela-section-productos .container .content .column {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+}
+.sondevela-section-productos .container .content .column .title {
+  font-size: 36px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 600;
+  color: #A1865E;
+  margin: 0;
+}
+.sondevela-section-productos .container .content .products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding-left: 120px;
+  margin-top: 70px;
+  padding-bottom: 45px;
+}
+.sondevela-section-productos .container .content .products .product {
+  position: relative;
+}
+.sondevela-section-productos .container .content .products .product .product-image {
+  height: 467px;
+  background-color: grey;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sondevela-section-productos .container .content .products .product .product-image .product-info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80%;
+  height: 100px;
+  padding-left: 50px;
+}
+.sondevela-section-productos .container .content .products .product .product-image .product-info .product-name {
+  display: block;
+  font-family: "Playfair Display", sans-serif;
+  color: #A1865E;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.sondevela-section-experiencia .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
+.sondevela-section-experiencia .container .content {
+  margin: 0 auto;
+  padding: 190px 50px 125px 50px;
+}
+.sondevela-section-experiencia .container .content .title {
+  font-size: 36px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 800;
+  line-height: 35px;
+  color: #A1865E;
+  position: relative;
+  text-align: left;
+}
+.sondevela-section-experiencia .container .content .title:before {
+  content: "";
+  height: 1px;
+  width: 50px;
+  background-color: #000;
+  position: absolute;
+  top: -43px;
+}
+.sondevela-section-experiencia .container .content .description {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  text-align: left;
+}
+.sondevela-section-experiencia .container .content .link a {
+  min-width: 218px;
+}
+.sondevela-section-experiencia .container .images .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sondevela-section-experiencia.left .container {
+  grid-template-columns: 1fr 6fr;
+}
+.sondevela-section-experiencia.right .container {
+  grid-template-columns: 6fr 1fr;
+}
+.sondevela-section-experiencia.right .container .content {
+  order: 1;
+}
+
+.sondevela-section-conoce-slider {
+  background-color: #F7F6F2;
+  padding-top: 125px;
+  padding-bottom: 135px;
+}
+.sondevela-section-conoce-slider .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.sondevela-section-conoce-slider .container .content {
+  margin: 0 auto;
+}
+.sondevela-section-conoce-slider .container .content .subtitle {
+  display: block;
+  font-size: 18px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 92px;
+  position: relative;
+}
+.sondevela-section-conoce-slider .container .content .subtitle:before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 72px;
+  background-color: #000;
+  display: inline-block;
+  top: 12px;
+  left: 0;
+}
+.sondevela-section-conoce-slider .container .content .column {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+}
+.sondevela-section-conoce-slider .container .content .column .title {
+  font-size: 36px;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 600;
+  color: #A1865E;
+  margin: 0;
+}
+.sondevela-section-conoce-slider .container .images {
+  margin-top: 35px;
+  overflow: hidden;
+}
+.sondevela-section-conoce-slider .container .images img {
+  width: auto;
+  height: 432px;
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.sondevela-section-sostenibilidad {
+  background-color: #474A70;
+}
+.sondevela-section-sostenibilidad .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: left;
+}
+.sondevela-section-sostenibilidad .container .content {
+  padding: 130px 160px;
+}
+.sondevela-section-sostenibilidad .container .content .row {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.sondevela-section-sostenibilidad .container .content .row:nth-child(3) {
+  color: #fff;
+}
+.sondevela-section-sostenibilidad .container .content .row:nth-child(3) .column:nth-child(1) span {
+  max-width: 440px;
+  font-size: 20px;
+  line-height: 27px;
+  display: block;
+}
+.sondevela-section-sostenibilidad .container .content .row:nth-child(3) .column:nth-child(2) span {
+  font-size: 24px;
+  display: inline-block;
+  max-width: 355px;
+  color: #0F1022;
+  line-height: 27px;
+  font-weight: 800;
+}
+.sondevela-section-sostenibilidad .container .content .row:nth-child(3) .column:nth-child(2) a {
+  display: inline-block;
+  font-size: 16px;
+  width: 170px;
+  min-width: unset;
+  float: right;
+}
+.sondevela-section-sostenibilidad .container .content .fs {
+  max-width: 417px;
+}
+.sondevela-section-sostenibilidad .container .content h2 {
+  font-size: 36px;
+  font-family: "Playfair Display", sans-serif;
+  color: #0F1022;
+}
+.sondevela-section-sostenibilidad .container .content .subtitle {
+  font-size: 24px;
+  font-family: PlayfairDisplay, sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+.sondevela-section-sostenibilidad .container .content .author {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  color: #0F1022;
+  font-weight: 600;
+}
+.sondevela-section-sostenibilidad .container .content i {
+  font-size: 24px;
+  font-family: "Playfair Display", sans-serif;
+  color: #fff;
+  font-style: italic;
+}
+.sondevela-section-sostenibilidad .container .content .tiles p {
+  font-family: Montserrat, sans-serif;
+  border: 1px solid #0F1022;
+  padding: 15px 24px;
+  height: 168px;
+  font-size: 15px;
+  color: #fff;
+  box-sizing: content-box;
+  display: grid;
+  align-items: center;
+}
+.sondevela-section-sostenibilidad .container .content .dottedline-white {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+/*# sourceMappingURL=admin.css.map */

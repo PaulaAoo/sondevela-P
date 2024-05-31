@@ -1,0 +1,43 @@
+@use '../variables';
+
+.sondevela-section-formulario {
+  height: 588px;
+  background-color: variables.$secondary-color;
+
+  .container {
+    min-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+    .content {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 7fr 6fr;
+      min-height: 500px;
+      align-items: center;
+
+      .title {
+        font-size: 40px;
+        font-family: Playfair Display, sans-serif;
+        line-height: 50px;
+        font-weight: 800;
+        color: #fff;
+        max-width: 520px;
+        text-align: left;
+        position: relative;
+      }
+
+
+      .description {
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 200;
+        max-width: 464px;
+        text-align: left;
+        color: #fff;
+        display: block;
+      }
+    }
+  }
+}

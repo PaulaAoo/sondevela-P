@@ -1,0 +1,15 @@
+$main-color: #0F1022;
+$secondary-color: #322a57;
+$gold-color: #A1865E;
+$beige-color: #F7F6F2;
+$borde: 28px;
+$border-radius: .8em;
+$mobile: 980px;
+$max-width: 1440px;
+
+.vcenter{
+  top: calc(50%);
+  position: relative;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}

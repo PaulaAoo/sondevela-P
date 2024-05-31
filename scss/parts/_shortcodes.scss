@@ -1,0 +1,15 @@
+.shortcode-products-megamenu{
+  .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 21px;
+    .product{
+      .img{
+        background-size: cover;
+        background-position: center center;
+        height: 265px;
+        width: 100%;
+      }
+    }
+  }
+}

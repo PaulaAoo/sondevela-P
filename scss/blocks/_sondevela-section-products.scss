@@ -1,0 +1,121 @@
+@use '../variables';
+
+.sondevela-section-productos{
+  background-color: variables.$beige-color;
+  padding-top: 125px;
+  padding-bottom: 135px;
+  .container{
+    max-width: variables.$max-width;
+    margin: 0 auto;
+    .content {
+      margin: 0 auto;
+      .subtitle {
+        display: block;
+        font-size: 18px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 92px;
+        position: relative;
+        &:before{
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 72px;
+          background-color: #000;
+          display: inline-block;
+          top: 12px;
+          left: 0;
+        }
+      }
+      .column{
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        .title {
+          font-size: 36px;
+          font-family: 'Playfair Display', sans-serif;
+          font-weight: 600;
+          color: variables.$gold-color;
+          margin: 0;
+        }
+      }
+      .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding-left: 120px;
+        margin-top: 70px;
+        padding-bottom: 45px;
+        max-width: 1260px;
+        .product{
+          position: relative;
+          &:hover{
+            //TODO: Afegir hover
+          }
+          .product-image{
+            height: 467px;
+            background-color: grey;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 374px;
+            .product-info{
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              background-color: rgb(255 255 255 / 70%);
+              width: 80%;
+              height: 100px;
+              padding-left: 50px;
+              a {
+                text-decoration: none;
+                .product-name {
+                  display: block;
+                  font-family: "Playfair Display", sans-serif;
+                  color: variables.$gold-color;
+                  font-size: 36px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+      }
+      .badges{
+        .icons{
+          max-width: 80%;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          margin: 0 auto;
+          padding-left: 250px;
+          text-align: center;
+          .icon{
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text {
+              padding-left: 15px;
+              span {
+                font-size: 12px;
+                font-family: Montserrat, sans-serif;
+                font-weight: 400;
+                display: block;
+                text-align: left;
+              }
+
+              span:first-child {
+                font-size: 15px;
+                font-family: Montserrat, sans-serif;
+                font-weight: bold;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

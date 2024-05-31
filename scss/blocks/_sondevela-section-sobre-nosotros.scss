@@ -1,0 +1,48 @@
+@use '../variables';
+
+.sondevela-section-sobre-nosotros{
+  background-color: variables.$main-color;
+  padding: 120px 0 80px 0;
+  .container {
+    max-width: 1161px;
+    margin: 0 auto;
+    color: #fff;
+    .content {
+      text-align: center;
+      h1{
+        font-size: 20px;
+        font-family: Montserrat, sans-serif;
+        margin: 0;
+        padding-bottom: 20px;
+      }
+      h2{
+        margin: 0;
+        font-size: 80px;
+        font-family: "Playfair Display", sans-serif;
+        padding-bottom: 33px;
+      }
+    }
+    .images{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 16px;
+      div{
+        height: 564px;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+    .description{
+      padding-top: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 64px;
+      font-size: 15px;
+      font-family: Montserrat, sans-serif;
+      span{
+        display: blocK;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use '../variables';
+
+.sondevela-section-conoce-slider{
+  background-color: variables.$beige-color;
+  padding-top: 125px;
+  padding-bottom: 135px;
+  .container{
+    max-width: variables.$max-width;
+    margin: 0 auto;
+    .content {
+      margin: 0 auto;
+      .subtitle {
+        display: block;
+        font-size: 18px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-left: 92px;
+        position: relative;
+        &:before{
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 72px;
+          background-color: #000;
+          display: inline-block;
+          top: 12px;
+          left: 0;
+        }
+      }
+      .column{
+        display: grid;
+        grid-template-columns: 8fr 2fr;
+        .title {
+          font-size: 36px;
+          font-family: 'Playfair Display', sans-serif;
+          font-weight: 600;
+          color: variables.$gold-color;
+          margin: 0;
+        }
+      }
+    }
+    .images{
+      margin-top: 35px;
+      overflow: hidden;
+      img{
+        width: auto;
+        height: 432px;
+        display: inline-block;
+        margin-right: 13px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container{
+      display: block;
+      .content{
+        padding: 40px 30px;
+      }
+    }
+  }
+}

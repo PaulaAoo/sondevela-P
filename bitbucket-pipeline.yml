@@ -1,0 +1,24 @@
+pipelines:
+  branches:
+    master:
+      - step:
+          name: 'Deployment to Production'
+          deployment: production
+          script:
+            - pipe: atlassian/sftp-deploy:0.7.1
+              variables:
+                USER: 'sondevela'
+                SERVER: 'sondevela.com'
+                REMOTE_PATH: '/www/wp-content/themes/basepro/'
+          after-script:
+            - ALERT_TYPE="🚀 Deploy realitzat correctament!"
+            - if [[ $BITBUCKET_EXIT_CODE -ne 0 ]]; then ALERT_TYPE="💥 El deploy ha fallat!" ; fi
+            - pipe: atlassian/email-notify:0.11.0
+              variables:
+                USERNAME: '#'
+                PASSWORD: $PASSWORD
+                FROM: '#'
+                TO: 'gerard.cuadras@gmail.com'
+                HOST: '#'
+                SUBJECT: '${ALERT_TYPE}'
+                DEBUG: 'true'

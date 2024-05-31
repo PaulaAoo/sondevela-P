@@ -1,0 +1,665 @@
+@use '../variables';
+
+.sondevela-product{
+
+  .gallery_tab{
+    padding-top: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    .grid-item{
+      max-width: calc(33% - 20px);
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .location-tab{
+    text-align: center;
+  }
+
+  .tabs{
+    .banner{
+      width: 100%;
+      height: 692px;
+      padding-top: 70px;
+      background-color: #F7F6F2;
+      box-sizing: border-box;
+      .image{
+        max-width: 1316px;
+        width: 100%;
+        height: 603px;
+        background-color: grey;
+        margin: 0 auto;
+        position: relative;
+        .border{
+          width: 95%;
+          height: 89%;
+          background-color: #ff000000;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          border: 2px solid #fff !important;
+          z-index: 1;
+          text-align: right;
+          vertical-align: bottom;
+          div{
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            h3{
+              font-size: 55px;
+              font-family: "Playfair Display", sans-serif;
+              font-weight: 600;
+              line-height: 60px;
+              margin: 0;
+              color: #fff;
+            }
+            span{
+              font-size: 32px;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 400;
+              line-height: 60px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    #tab-attrib_desc_tab{
+      background-color: #fff !important;
+      .col{
+        padding-top: 60px;
+        max-width: 912px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        grid-column-gap: 60px;
+        padding-bottom: 110px;
+        h2{
+          color: variables.$gold-color;
+          font-size: 40px;
+          font-weight: 700;
+          font-family: "Playfair Display", sans-serif;
+          text-align: right;
+          margin: 0;
+        }
+        span{
+          font-size: 20px;
+          font-family: Montserrat, sans-serif;
+          font-style: italic;
+          line-height: 30px;
+          padding-top: 10px;
+
+        }
+      }
+      .icons{
+        max-width: 840px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: variables.$gold-color;
+        grid-column-gap: 70px;
+        padding-bottom: 80px;
+        .icon{
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+          div:first-child{
+            display: flex;
+            align-items: center;
+          }
+          div:nth-child(2){
+            padding-left: 15px;
+          }
+          h4{
+            margin: 0;
+          }
+        }
+      }
+      .todo{
+         max-width: 770px;
+         margin: 0 auto;
+         ul{
+           counter-reset: item;
+           list-style: none;
+           li{
+             position: relative;
+             &:before{
+               content: counter(item);
+               counter-increment: item;
+               position: absolute;
+               left: -70px;
+               font-family: "Playfair Display", sans-serif;
+               font-size: 36px;
+               line-height: 36px;
+               background-color: variables.$gold-color;
+               border-radius: 100px;
+               width: 44px;
+               height: 44px;
+               text-align: center;
+               color: #fff;
+             }
+             h4{
+               font-size: 24px;
+               font-family: "Playfair Display", sans-serif;
+               font-weight: 600;
+               color: #000;
+             }
+             span{
+               font-size: 14px;
+               font-weight: 300;
+               font-family: Montserrat, sans-serif;
+             }
+           }
+         }
+       }
+      .extra{
+        background-color: #0F1022;
+        h3{
+          max-width: 850px;
+          margin: 0 auto;
+          display: block;
+          margin-bottom: 55px;
+          color: variables.$gold-color;
+          font-family: "Playfair Display", sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+        }
+        .column{
+          max-width: 850px;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .wc-tabs-wrapper {
+      background-color: #F7F6F2 !important;
+      .wc-tabs {
+        background-color: #F7F6F2 !important;
+        max-width: 707px;
+        display: grid;
+        grid-template-columns: 252px 171px 130px 154px;
+        margin: 0 auto !important;
+        margin-bottom: -24px !important;
+        border: 0 !important;
+
+        &:before {
+          display: none !important;
+        }
+
+        li {
+          background-color: #F7F6F2 !important;
+          border: 0 !important;
+          text-align: center;
+          padding: 27px 0 !important;
+          font-size: 15px;
+          font-weight: 600;
+          font-family: Montserrat, sans-serif;
+          color: #000;
+
+          &.active {
+            background-color: variables.$secondary-color !important;
+            color: #fff !important;
+          }
+
+          &:before {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  @import '../parts/extra-products';
+
+  .extra{
+    padding-top: 75px;
+    padding-bottom: 140px;
+    background-color: variables.$main-color;
+    .column{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      .icon {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        h4{
+          margin-bottom: 0;
+          color: variables.$gold-color
+        }
+        span{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .reserva{
+    max-width: 1308px;
+    margin: 0 auto;
+    .container{
+      .co{
+        padding-top: 74px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 90px;
+      }
+      .img{
+        min-height: 768px;
+        max-width: 689px;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .slick-list{
+        max-width: 689px;
+      }
+
+      .bottom {
+        padding-top: 74px;
+        padding-bottom: 136px;
+        .row {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          &:first-child{
+            margin-bottom: 65px;
+          }
+          .icon {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            h4{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.sondevela-product-alquiler{
+    .banner{
+      margin-bottom: -19px;
+      .image{
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+    .wc-tabs{
+      li{
+        border-radius: 0 !important;
+        a{
+          padding: 0 !important;
+        }
+      }
+    }
+
+    .center{
+      text-align: center; 
+    }
+
+    .options{
+      height: 781px;
+      background-color: variables.$secondary-color;
+      color: #fff;
+      .container {
+        max-width: variables.$max-width;
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .column:first-child{
+          /*height: 100%;*/
+          position: relative;
+          .co{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          h2{
+            font-family: "Playfair Display", sans-serif;
+            font-size: 58px;
+            font-weight: 800;
+          }
+          .subtitle {
+            display: block;
+            font-size: 18px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-left: 92px;
+            position: relative;
+
+            &:before {
+              position: absolute;
+              content: "";
+              height: 1px;
+              width: 72px;
+              background-color: #fff;
+              display: inline-block;
+              top: 12px;
+              left: 0;
+            }
+          }
+        }
+        .column:nth-child(2){
+          position: relative;
+          .co{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        .slick-slide {
+          padding: 0 28px;
+          box-sizing: border-box;
+        }
+
+        .product-slider{
+          max-width: 720px;
+          .product {
+            max-height: 320px;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            padding: 40px 28px;
+            color: #000;
+            .image{
+              position: relative;
+              height: 260px;
+              width: 260px ;
+              background-color: #2f2f2f;
+              border-radius: 300px;
+              .content{
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 300px;
+                max-width: 230px;
+                max-height: 230px;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                .info{
+                  text-align: center;
+                  top: 50%;
+                  position: relative;
+                  transform: translateY(-50%);
+                  a {
+                    text-decoration: none;
+                    h3 {
+                      padding: 0;
+                      margin: 0;
+                      font-size: 50px;
+                      color: variables.$gold-color;
+                      font-family: "Playfair Display", sans-serif;
+                      font-weight: 800;
+                      line-height: 62px;
+                    }
+                  }
+                  span{
+                    font-family: Montserrat, sans-serif;
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+
+            &.slick-current{
+              max-width: 370px;
+              padding: 0 28px;
+              .image{
+                height: 300px;
+                width: 300px;
+                background-position: center center;
+                .content{
+                  top: 20px;
+                  left: 20px;
+                  max-width: 260px;
+                  max-height: 260px;
+                }
+              }
+            }
+          }
+          .slick-dots li button:before{
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+  }
+
+  &.sondevela-product-experiencia {
+
+    .header{
+      max-width: 1184px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .gallery{
+        background-color: #fff;
+        padding-top: 50px;
+      }
+      .info{
+        padding: 50px 90px;
+        h1{
+          color: variables.$gold-color;
+          font-size: 54px;
+          font-family: "Playfair Display", sans-serif;
+          font-weight: 900;
+          line-height: 62px;
+        }
+        span{
+          font-family: Montserrat, sans-serif;
+          font-size: 18px;
+        }
+        .price, .amount{
+          font-size: 32px;
+          font-family: "Playfair Display", sans-serif;
+          font-weight: 800;
+          color: #000;
+        }
+
+        .extra-info{
+          display: block;
+          color: variables.$gold-color;
+          margin-bottom: 15px;
+          font-weight: 800;
+        }
+
+        .btn{
+          display: block;
+          max-width: 304px;
+          margin-top: 47px;
+        }
+
+      }
+      .gallery{
+        .woocommerce-product-gallery{
+          margin-top: 50px;
+          width: 100%;
+        }
+      }
+    }
+
+    .regiondo{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      background-color: #A1865E;
+      .container{
+        margin: 0 auto;
+        .grid {
+          display: grid;
+          grid-template-columns: 4fr 3fr;
+          h3:first-child{
+            padding: 0 40px;
+            margin-bottom: 60px;
+          }
+          h3{
+            font-size: 29px;
+            font-family: "Playfair Display", sans-serif;
+            font-weight: 900;
+            color: #0F1022;
+          }
+          .column:first-child {
+            padding: 0px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .icon {
+              display: grid;
+              grid-template-columns: 1fr 3fr;
+
+              span {
+                display: block;
+                padding-left: 16px;
+              }
+
+              h4 {
+                display: block;
+                font-family: "Playfair Display", sans-serif;
+                color: #0F1022;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 0;
+                padding-left: 16px;
+                margin-bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .tabs {
+      text-align: center;
+      background-color: variables.$beige-color !important;
+      &::before, &::after{
+        display: none !important;
+      }
+      li{
+        padding: 0 23px;
+        border-radius: 0 !important;
+        border: 0 !important;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        height: 77px;
+        line-height: 70px;
+        background-color: variables.$beige-color !important;
+        margin: unset !important;
+        &.active{
+          background-color: #A1865E !important;
+          color: #fff !important;
+        }
+        &::before, &::after{
+          display: none !important;
+        }
+      }
+    }
+
+    .menu-premium{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1440px;
+      margin: 0 auto;
+      h3{
+        font-size: 39px;
+        color: variables.$gold-color;
+        font-family: "Playfair Display", sans-serif;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      span{
+        letter-spacing: 3px;
+        font-size: 25px;
+        font-family: Montserrat, sans-serif;
+        line-height: 49px;
+        text-align: center;
+        display: block;
+        margin-bottom: 40px;
+      }
+      p{
+        font-size: 18px;
+        line-height: 22px;
+        font-family: Montserrat, sans-serif;
+        max-width: 445px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+    }
+
+    .sondevela-section-intro {
+      .container {
+        max-width: 821px;
+      }
+    }
+
+    .sondevela-section-numbers {
+      .container {
+        max-width: 821px;
+      }
+    }
+
+    .gallery{
+      background-color: variables.$main-color;
+      padding-top: 145px;
+      padding-bottom: unset;
+      .gal-slider{
+        max-height: 462px;
+        margin-bottom: 40px;
+        position: relative;
+        .slick-list{
+          max-width: 950px;
+          margin: 0 auto;
+        }
+        img{
+          max-height: 400px;
+          margin-top: 30px;
+        }
+        img[className="slick-prev"]{
+          position: absolute;
+          top: -70px;
+          right: 51%;
+          height: 18px;
+        }
+        img[className="slick-next"]{
+          position: absolute;
+          top: -70px;
+          left: 51%;
+          height: 18px;
+        }
+        .img{
+          &.slick-active{
+            img{
+              max-height: 462px;
+              margin-top: 0;
+            }
+            span{
+              display: block;
+            }
+          }
+        }
+      }
+      span{
+        display: none;
+        font-size: 26px;
+        color: #fff;
+        font-family: "Playfair Display", sans-serif;
+        text-align: center;
+        max-width: 500px;
+        margin: 40px auto 0 auto;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .header{
+        display: block;
+        .gallery{
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

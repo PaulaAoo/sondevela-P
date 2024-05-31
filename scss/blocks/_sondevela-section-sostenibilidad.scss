@@ -1,0 +1,93 @@
+@use '../variables';
+
+.sondevela-section-sostenibilidad{
+  background-color: #474A70;
+  .container{
+    max-width: variables.$max-width;
+    margin: 0 auto;
+    text-align: left;
+    .content {
+      padding: 130px 160px;
+      .row{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .row:nth-child(3){
+        color: #fff;
+        .column:nth-child(1){
+          span{
+            max-width: 440px;
+            font-size: 20px;
+            line-height: 27px;
+            display: block;
+          }
+        }
+        .column:nth-child(2){
+          span{
+            font-size: 24px;
+            display: inline-block;
+            max-width: 355px;
+            color: variables.$main-color;
+            line-height: 27px;
+            font-weight: 800;
+          }
+          a{
+            display: inline-block;
+            font-size: 16px;
+            width: 170px;
+            min-width: unset;
+            float: right;
+
+
+          }
+        }
+      }
+      .fs{
+        max-width: 417px;
+      }
+      h2{
+        font-size: 36px;
+        font-family: "Playfair Display", sans-serif;
+        color: variables.$main-color;
+      }
+      .subtitle{
+        font-size: 24px;
+        font-family: Playfair+Display, sans-serif;
+        font-weight: 200;
+        color: #fff;
+      }
+      .author{
+        display: block;
+        font-family: Montserrat, sans-serif;
+        color: #fff;
+        font-size: 20px;
+        color: variables.$main-color;
+        font-weight: 600;
+      }
+      i{
+        font-size: 24px;
+        font-family: 'Playfair Display', sans-serif;
+        color: #fff;
+        font-style: italic;
+      }
+      .tiles{
+        p{
+          font-family: Montserrat, sans-serif;
+          border: 1px solid variables.$main-color ;
+          padding: 15px 24px;
+          height: 168px;
+          font-size: 15px;
+          color: #fff;
+          box-sizing: content-box;
+          display: grid;
+          align-items: center;
+        }
+      }
+      .dottedline-white{
+        margin-top: 75px;
+        margin-bottom: 75px;
+      }
+    }
+  }
+}

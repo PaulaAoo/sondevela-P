@@ -1,0 +1,474 @@
+@use '../variables';
+
+.archive{
+  &.term-alquiler-barco-barcelona-horas, &.term-16, &.term-36, &.term-107, &.term-37{
+
+    .banner{
+      align-items: center;
+      display: flex;
+      height: 661px;
+      background-color: grey;
+      padding-left: 18rem;
+      h1{
+        color: #fff;
+        font-size: 55px;
+        font-family: "Playfair Display", sans-serif;
+        max-width: 496px;
+      }
+    }
+
+    .intro{
+      max-width: 1163px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 754px;
+      .column:last-child{
+        padding-left: 108px;
+        h2{
+          font-family: "Playfair Display", sans-serif;
+          font-size: 40px;
+          font-weight: 800;
+        }
+      }
+    }
+    .features{
+      max-width: 1198px;
+      margin: 0 auto;
+      padding: 91px 0;
+      h2{
+        font-family: "Playfair Display", sans-serif;
+        font-size: 36px;
+        font-weight: 800;
+        text-align: center;
+        color: variables.$gold-color;
+      }
+      .ft{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-top: 40px;
+        img{
+          max-width: 110px;
+          max-height: 110px;
+        }
+        h3{
+          color: variables.$gold-color;
+          font-family: "Playfair Display", sans-serif;
+          font-size: 24px;
+          font-weight: 800;
+        }
+        span{
+          font-family: Montserrat, sans-serif;
+          font-size: 15px;
+        }
+      }
+    }
+    .options{
+      height: 781px;
+      background-color: variables.$beige-color;
+      .container {
+        max-width: variables.$max-width;
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .column:first-child{
+          /*height: 100%;*/
+          position: relative;
+          .co{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          h2{
+            font-family: "Playfair Display", sans-serif;
+            font-size: 58px;
+            font-weight: 800;
+          }
+          .subtitle {
+            display: block;
+            font-size: 18px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-left: 92px;
+            position: relative;
+
+            &:before {
+              position: absolute;
+              content: "";
+              height: 1px;
+              width: 72px;
+              background-color: #000;
+              display: inline-block;
+              top: 12px;
+              left: 0;
+            }
+          }
+        }
+        .column:nth-child(2){
+          position: relative;
+          .co{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+
+        .slick-slide {
+          padding: 0 28px;
+          box-sizing: border-box;
+        }
+
+        .product-slider{
+          max-width: 720px;
+          .product {
+            max-height: 350px;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            padding: 40px 28px;
+            .image{
+              position: relative;
+              height: 260px;
+              width: 260px ;
+              background-color: #2f2f2f;
+              border-radius: 300px;
+              background-size: cover !important;
+              .content{
+                height: 100%;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 300px;
+                max-width: 230px;
+                max-height: 230px;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                .info{
+                  text-align: center;
+                  top: 50%;
+                  position: relative;
+                  transform: translateY(-50%);
+                  a {
+                    text-decoration: none;
+                    h3 {
+                      padding: 0;
+                      margin: 0;
+                      font-size: 50px;
+                      color: variables.$gold-color;
+                      font-family: "Playfair Display", sans-serif;
+                      font-weight: 800;
+                      line-height: 62px;
+                    }
+                  }
+                  span{
+                    font-family: Montserrat, sans-serif;
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+
+            &.slick-current{
+              max-width: 370px;
+              padding: 0 28px;
+              .image{
+                height: 330px;
+                width: 330px;
+                .content{
+                  top: 20px;
+                  left: 20px;
+                  max-width: 290px;
+                  max-height: 290px;
+                }
+              }
+            }
+          }
+          .slick-dots li button:before{
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .reserva{
+      padding-top: 90px;
+      max-width: 1308px;
+      margin: 0 auto;
+      .container{
+        .co{
+          padding-top: 74px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 90px;
+        }
+        .bottom {
+          padding-top: 74px;
+          padding-bottom: 136px;
+          .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            &:first-child{
+              margin-bottom: 65px;
+            }
+            .icon {
+              display: grid;
+              grid-template-columns: 1fr 3fr;
+              h4{
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .extra{
+      background-color: variables.$main-color;
+      min-height: 724px;
+      .container {
+        max-width: variables.$max-width;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 724px;
+        .column {
+          position: relative;
+          > div {
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 479px;
+
+            span {
+              font-family: "Playfair Display", sans-serif;
+              font-size: 30px;
+              font-weight: 800;
+              color: #fff;
+
+              i {
+                color: variables.$gold-color;
+                font-style: normal;
+              }
+            }
+          }
+          .alquila-slider{
+            img[classname="slick-next"]{
+              position: absolute;
+              bottom: -30px;
+              width: 40px;
+              left: 60px;
+            }
+            img[classname="slick-prev"]{
+              position: absolute;
+              bottom: -30px;
+              width: 40px;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    @import "../parts/extra-products";
+  }
+
+  &.term-experiencias-catamaran-barcelona, &.term-19, &.term-17, &.term-34, &.term-35{
+    .banner{
+      height: 937px;
+      background-color: grey;
+      text-align: center;
+      background-size: cover;
+      background-position: center center;
+      .vcenter{
+        max-width: 500px;
+        color: #fff;
+      }
+      h2{
+        font-size: 75px;
+        font-family: "Playfair Display", sans-serif;
+        font-weight: bold;
+        margin: 0 0 28px 0;
+        padding: 0;
+        line-height: 70px;
+      }
+      h3{
+        font-size: 45px;
+        font-family: Montserrat, sans-serif;
+        font-weight: 200;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .intro{
+      height: 500px;
+      background-color: #fff;
+      position: relative;
+      .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        transform: translateY(-50%) translateX(-50%);
+        top: 50%;
+        position: absolute;
+        margin: 0 auto;
+        left: 50%;
+        .subtitle {
+          display: block;
+          font-size: 18px;
+          font-family: Montserrat, sans-serif;
+          font-weight: 400;
+          text-transform: uppercase;
+          padding-left: 92px;
+          position: relative;
+          &:before{
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 72px;
+            background-color: #000;
+            display: inline-block;
+            top: 12px;
+            left: 0;
+          }
+        }
+        h2{
+          font-size: 48px;
+          font-family: "Playfair Display", sans-serif;
+          color: variables.$gold-color;
+        }
+        .content{
+          font-size: 20px;
+          font-family: Montserrat, sans-serif;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          max-width: 1228px;
+          margin-left: 212px;
+          box-sizing: content-box;
+          grid-gap: 45px;
+        }
+      }
+    }
+    .experiencias{
+      background-color: variables.$beige-color;
+      &.blue{
+        background-color: variables.$main-color;
+      }
+      .content {
+        padding-left: calc((100vw - 1440px)/2);
+        .slick-slide {
+          margin: 0 16px;
+        }
+        .slick-list {
+          margin: 0 -16px;
+        }
+        .title{
+          color: variables.$gold-color;
+          font-size: 48px;
+          font-family: "Playfair Display", sans-serif;
+          font-weight: bold;
+          padding-top: 68px;
+          padding-bottom: 47px;
+          margin: 0;
+        }
+        img[classname="slick-prev"]{
+          position: absolute;
+          bottom: 72px;
+          width: 56px;
+          cursor: pointer;
+        }
+        img[classname="slick-next"]{
+          position: absolute;
+          bottom: 72px;
+          left: 80px;
+          width: 56px;
+          cursor: pointer;
+        }
+        .products {
+          padding-bottom: 128px;
+          .product {
+            height: 605px;
+            width: 100%;
+            max-width: 383px;
+            background-color: #fff;
+            text-align: center;
+
+            .product-image {
+              background-color: #b4b4b4;
+              height: 256px;
+            }
+
+            .product-name {
+              margin-top: 44px;
+              font-size: 24px;
+              color: variables.$gold-color;
+              font-family: "Playfair Display", sans-serif;
+              display: block;
+              padding: 0 15px;
+              min-height: 70px;
+            }
+
+            .description {
+              margin-top: 31px;
+              font-family: Montserrat, sans-serif;
+              font-size: 12px;
+              display: block;
+              padding: 0 32px;
+              height: 60px;
+            }
+
+            .btn {
+              margin-top: 29px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-experiencias{
+    height: 588px;
+    background-color: variables.$secondary-color;
+    .container{
+      min-height: 500px;
+      margin: 0 auto;
+      text-align: center;
+      .content {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 7fr 6fr;
+        min-height: 500px;
+        align-items: center;
+        .title {
+          font-size: 40px;
+          font-family: Playfair Display, sans-serif;
+          line-height: 50px;
+          font-weight: 800;
+          color: #fff;
+          max-width: 500px;
+          text-align: left;
+          position: relative;
+        }
+
+
+        .description {
+          font-family: Montserrat, sans-serif;
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 200;
+          max-width: 464px;
+          text-align: left;
+          color: #fff;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.product-slider{
+  .product{
+    max-height: 260px;
+    .image{
+      background-size: cover;
+    }
+  }
+}

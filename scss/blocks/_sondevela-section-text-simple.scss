@@ -1,0 +1,15 @@
+@use '../variables';
+
+.sondevela-section-text-simple{
+  min-height: 233px;
+  background-color: variables.$beige-color;
+  .container {
+    max-width: 853px;
+    margin: 0 auto;
+    .content {
+      font-size: 20px;
+      padding: 65px 0;
+      font-family: Montserrat, sans-serif;
+    }
+  }
+}
